@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import TodoItems from './components/TodoItems';
 import './App.css'
+import bellIcon from './assets/bell-icon.svg';
+import logo from './assets/logo.svg';
 import { TodoProvider } from './context'
 
 function App() {
@@ -49,7 +51,7 @@ function App() {
           <div className='todo-container'>
             <div className='navbar'>
               <div className='logo'>
-                <img src='/logo.svg' />
+                <img src={logo} alt="logo" />
               </div>
               <div className='nav-heading'>
                 <h1>ToDo</h1>
@@ -61,7 +63,7 @@ function App() {
             </div>
 
             <div className='task-number'>
-              <img src='/bell-icon.svg' />
+              <img src={bellIcon} alt="Bell Icon" />
               <p>You have got {inCompleteCount} things to conquer today</p>
             </div>
 
