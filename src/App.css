@@ -1,0 +1,212 @@
+/* Import fonts only once */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Rubik:wght@300..900&family=Space+Mono:wght@400;700&display=swap');
+
+/* Set base font size for rem calculation */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2C3144;
+}
+
+.screen {
+  background-color: #C3CBED;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.container {
+  height: 80vh;
+  width: 80%;
+  background-color: white;
+  border-radius: 1.875rem; /* 30px */
+  padding: 1.875rem;       /* 30px */
+  display: flex;
+  justify-content: center;
+}
+
+.todo-container {
+  height: 100%;
+  width: 80%;
+}
+
+.navbar {
+  height: 4.375rem; /* 70px */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-heading {
+  height: 3.4375rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-heading h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.9rem;
+  font-weight: 800;
+  color: #2C3144;
+}
+
+.logo {
+  height: 3.4375rem; /* 55px */
+  width: 3.4375rem;
+  margin-right: 1.0625rem; /* 17px */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.greeting h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #293141;
+}
+
+.task-number {
+  height: 4.375rem; /* 70px */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.task-number img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1.25rem;
+}
+
+.task-number p {
+  font-size: 2.5rem;
+  font-family: 'Space Mono', monospace;
+  color: #6B7286;
+}
+
+.add-task{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-task-btn{
+    height: 94px;
+    width: 500px;
+    background-color: #8683EE;
+    color: white;
+    border-radius: 100px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #6f6ae0; /* slightly darker purple */
+    box-shadow: 0 8px 20px rgba(134, 131, 238, 0.4);
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+  }
+  
+
+.todo-heading{
+    height: 50px;
+    color: #273246;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container{
+    width: 100%;
+    height: 235px;
+}
+
+.todo{
+    height: 60px;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    padding: 0 20px 0 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    border-radius: 9px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.todo-name{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+    width: 100%;
+} 
+
+.task-completed{
+    background-color: #8683EE;
+    border-color: #8683EE;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.checkmark {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.todo.completed{
+  background-color: #d9d8f9;
+}
+
+.delete-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.todo-input{
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-bottom-color: #6f6ae0; /* slightly darker shade on focus */
+}
